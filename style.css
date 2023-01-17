@@ -1,26 +1,54 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
+	font-size: 10px;
+	font-family: ;
 }
-
+br {
+	display: none;
+}
+body {
+	background-color: #F8B195 ;
+	font-family: "Idim";
+}
 nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	height: 50px;
 	position: fixed;
+	padding: 15px;
+	background-color:#F8B195;
 }
 
 footer {
 	text-align: center;
 }
 
+a:visited {
+	color: inherit;
+}
+
+.contact-top {
+	display:none;
+}
 
 .nav-left-container {
 	display: flex;
 	justify-content: flex-start;
 	gap: 30px;
-	
+	color: white;
+}
+
+.nav-left-container a {
+	text-decoration: none;
+	font-size: 2rem;
+	color: white;
+}
+
+nav > a {
+	font-size: 2rem;
+	text-decoration:none;
 }
 
 .intro {
@@ -30,12 +58,31 @@ footer {
 	gap: 50px;
 	align-items: center;
 	padding-top: 50px;
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
+	height: 100%;
 }
 
+.intro > img {
+	width: 300px;
+	height: 300px;
+}
+.intro-texts > h2 {
+	font-size: 3rem;
+}
+.intro-texts > h1 {
+	font-size: 5rem;
+}
+
+.intro-texts > h3 {
+	font-size: 2.4rem;
+}
+
+
+
+
 .intro-texts{
-	max-width: 50%;
+	max-width: 65%
 }
 
 .about-me {
@@ -45,7 +92,7 @@ footer {
 	flex-wrap: wrap;
 	gap: 50px;
 	align-items: center;
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 	
 }
@@ -54,22 +101,30 @@ footer {
 	max-width:50%;
 }
 
+.about-me-text > h2 {
+	font-size: 3rem;
+}
+
+.about-me-text > p, about-me-text > p > a {
+	font-size: 2rem;
+}
+
 .portfolio {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	width: 800px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
 .portfolio-title-container {
-	max-width: 900px;
+	max-width: 1000px;
 	width: 100%;
 }
 
 .projects-container {
-	max-width: 800px;
+	max-width: 1000px;
 	display: flex;
 	flex-direction:column;
 	justify-content: flex-start;
@@ -90,7 +145,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	max-width: 800px;
+	max-width: 1000px;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	
@@ -136,4 +191,37 @@ footer {
 	justify-content: space-around;
 	gap: 40px;
 	margin: 0 auto;
+}
+
+.contact-top {
+	display:none;
+}
+
+
+@media screen and (max-width:800px) {  
+
+	nav{
+		display: none;	
+	}
+	
+	.intro-texts{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	
+	br {
+		display: inline;
+	}
+	.intro > img {
+		display: none;
+	}
+	.contact-top {
+		display:block;
+	}
+	.contact-bottom {
+		display: none;
+	}
 }
