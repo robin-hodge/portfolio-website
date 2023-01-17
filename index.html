@@ -4,13 +4,13 @@
 		<link href="style.css" rel="stylesheet" type="text/CSS">
 	</head>
 	<body>
-		<nav>
+		<nav id="nav">
 			<div class="nav-left-container">
-				<a href="">About</a>
-				<a href="">Portfolio</a>
-				<a href="">Contact</a>
+				<a href="#about-me">About</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#contact">Contact</a>
 			</div>
-			<a href="https://docs.google.com/document/d/1G8ed6eSbtD6e5KjoC9QAf5T7TktOjEkubLuD5ih2ifs/edit">My CV</a>
+			<a href="https://docs.google.com/document/d/1G8ed6eSbtD6e5KjoC9QAf5T7TktOjEkubLuD5ih2ifs/edit" target="_blank">My CV</a>
 		</nav>
 		<div class="intro">
 			<img src="image.png" alt="An image of me"> 
@@ -20,7 +20,7 @@
 				<h2>I am an aspiring full stack developer, and recent graduate from iO Academy</h2>
 			</div>
 		</div>
-		<div class="about-me">
+		<div class="about-me" id="about-me">
 			<div class="about-me-text">
 				<h2>About</h2>
 				<p>Hi, I'm Robin. I have spent almost a decade teaching maths and economics, and have recently upskilled myself to move into software development. I have just finished studying on the <a href="https://io-academy.uk/courses/full-stack-track/">iOAcademy Full Stack Track</a> bootcamp. I am a hard working and friendly team player, with excellent interpersonal skills, and I am a particalarly strong communicator. I have been very successful in my time as a teacher, and I look forward to applying my many transferrable skills from the education sector into the world of coding.
@@ -28,7 +28,7 @@
 			</div>
 			<img src="image-two.png" alt="A portrait photo of me on black and white">
 		</div>
-		<div class="portfolio">
+		<div class="portfolio" id="portfolio">
 			<div class ="portfolio-outline-container">
 				<h2>Portfolio</h2>
 				<h3>Here is a small selection of some projects I have worked on</h3>
@@ -120,15 +120,18 @@
 				</div>
 			</div>
 		</div>
-		<div class="contact">
+		<div class="contact" id="contact">
 			<h2>Contact</h2>
 			<p> The best way to get in touch with me is via email, but if you prefer social media I have included these too.</p>
-			<a href="mailto:mrrobinhodge@gmail.com"><img src="emailpic.png" alt="An email thumbnail"></a>
-			<a href="https://www.linkedin.com/in/robin-hodge/"><img src="linkedinpic.png" alt="A linkedin thumbnail"></a>
-			<a href="https://github.com/horsenelly"><img src="githubpic.png" alt="A github thumbnail"></a>
+			<div class="contact-container">
+				<a href="mailto:mrrobinhodge@gmail.com"><img src="emailpic.png" alt="An email thumbnail"></a>
+				<a href="https://www.linkedin.com/in/robin-hodge/"><img src="linkedinpic.png" alt="A linkedin thumbnail"></a>
+				<a href="https://github.com/horsenelly"><img src="githubpic.png" alt="A github thumbnail"></a>
+			</div>
 		</div>
 		<footer>
-			<span>© Copyright 2021</span>
+			<a href="#nav">Back to top</a>
+			<p>© Copyright 2021</p>
 		</footer>
 	<body>
 </html>
