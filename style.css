@@ -71,6 +71,7 @@ nav > a {
 	width: 300px;
 	height: 350px;
 	object-fit: cover;
+	border-radius: 5px;
 }
 .intro-texts > h2 {
 	font-size: 3rem;
@@ -107,7 +108,7 @@ nav > a {
 }
 .about {
 	background-color:#355C7D;
-	border: 20px solid #355C7D ;
+	border: 50px solid #355C7D ;
 	width: 100%;
 }
 
@@ -128,15 +129,16 @@ nav > a {
 .full-stack-track-link {
 	font-size: 2rem;
 	text-decoration: none;
-	color: black;
+	color: #C06C84;
 }
 
 .full-stack-track-link:visited {
-	color: black;
+	color: #C06C84;
 }
 
 .about-me > img {
 	width:20%;
+	border-radius: 3px;
 }
 
 .portfolio {
@@ -146,6 +148,8 @@ nav > a {
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
+	border-top: 50px solid  #C06C84 ;
+	border-bottom: 50px solid  #C06C84 ;
 }
 
 .portfolio-title-container {
