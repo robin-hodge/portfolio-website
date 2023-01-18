@@ -61,6 +61,7 @@ nav > a {
 	max-width: 1000px;
 	margin: 0 auto;
 	height: 100%;
+	gap: 30px;
 	
 
 	
@@ -76,6 +77,7 @@ nav > a {
 }
 .intro-texts > h1 {
 	font-size: 5rem;
+	width: 100%;
 }
 
 .intro-texts > h3 {
@@ -282,6 +284,10 @@ footer p {
 	
 	br {
 		display: inline;
+	}
+	
+	.intro {
+		gap: 0px;
 	}
 	.intro > img {
 		display: none;
