@@ -348,6 +348,12 @@ footer p {
 		width:100%;
 	}
 	
+	.about-me-text > p, .portfolio-title-container > h3{
+		letter-spacing: 1.5px;
+		line-height: 22px;
+
+	}
+	
 	.contact-container {
 		justify-content: center;
 		gap: 90px;
