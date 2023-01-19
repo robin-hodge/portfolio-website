@@ -64,7 +64,7 @@ a:visited {
 	align-items: center;
 	margin: 0 auto;
 	height: 100%;
-	max-width: 1000px;
+	max-width: 1100px;
 	gap: 30px;	
 }
 
@@ -287,7 +287,14 @@ footer p {
 		margin: 15px 0;
 
 	}
+	.intro-texts {
+		max-width: 800%;
+		margin: 0 30px;
+	}
 	
+	.intro-texts > * {
+		text-align: center;
+	}
 	.intro-texts p {
 		font-size: 1.5rem;
 		letter-spacing: 1.2px;
@@ -309,11 +316,12 @@ footer p {
 	
 	.intro {
 		gap: 0px;
-		padding: 0;
+		padding: 80px 50px 50px 50px;
+		display: flex;
+		flex-flow: row wrap-reverse;
+		align-items: center;
 	}
-	.intro img {
-		display: none;
-	}
+	
 	.contact-top {
 		display: block;
 		position: fixed;
@@ -380,6 +388,7 @@ footer p {
 	
 	.project-content img {
 		padding: 0;
+		width: 90%;
 	}
 	
 	.project-text p {
@@ -387,7 +396,7 @@ footer p {
 	}
 
 	.portfolio p {
-		padding: 15px;
+		padding: 30px;
 	}
 	
 	.portfolio-title-container p {
