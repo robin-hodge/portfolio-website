@@ -1,24 +1,23 @@
+html {
+	font-size: 10px;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
-	font-size: 10px;
 	font-family: Ubuntu, Sans-serif;
 	color: white;
 	font-weight: bold;
 }
 br {
-	display:none;
+	display: none;
 }
 body {
 	background-color: #C06C84 ;
-	width: 100%;
-	font-family: "Idim";
 }
 nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	height: 50px;
 	position: fixed;
 	padding: 15px;
 	background-color: #C06C84;
@@ -28,6 +27,11 @@ footer {
 	text-align: center;
 	background-color: #355C7D;
 	padding-bottom: 30px;
+}
+
+.about-me, .projects-container, .portfolio-title-container, .project-content, .contact-outer-container .about-background {
+	max-width: 1000px;
+	width: 100%;
 }
 
 a:visited {
@@ -49,37 +53,31 @@ a:visited {
 	color: white;
 }
 
-nav > a {
-	font-size: 2rem;
-	text-decoration:none;
-}
 
 .intro {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap-reverse;
+	flex-wrap: nowrap;
 	padding: 15px;
 	align-items: center;
-	max-width: 1000px;
 	margin: 0 auto;
 	height: 100%;
-	gap: 30px;
-	
-
-	
+	max-width: 1000px;
+	gap: 30px;	
 }
 
-.intro > img {
+.intro img {
 	width: 300px;
 	object-fit: cover;
 	border-radius: 5px;
 }
-.intro-texts > h2 {
+.intro-hi {
 	font-size: 3.5rem;
 	letter-spacing: 3px;
 	line-height: 80px;
-}
-.intro-texts > h1 {
+	}
+
+h1 {
 	font-size: 7rem;
 	letter-spacing: 1.5px;
 	width: 100%;
@@ -87,14 +85,11 @@ nav > a {
 	margin: 35px 0;
 }
 
-.intro-texts > h3 {
+.intro-texts p {
 	font-size: 2.4rem;
 	letter-spacing: 2px;
 	line-height: 40px;
 }
-
-
-
 
 .intro-texts{
 	max-width: 65%
@@ -103,35 +98,29 @@ nav > a {
 .about-me {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-left;
-	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
 	gap: 50px;
 	align-items: center;
-	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
 	background-color: #355C7D;
 	padding: 15px;
 	
 }
-.about {
+.about-background {
 	background-color:#355C7D;
 	border: 50px solid #355C7D ;
-	width: 100%;
+	padding-bottom: 50px;
 }
 
-.about-me-text{
-	max-width:70%;
-
-}
-
-.about-me-text > h2, .portfolio-title-container > h2 {
+.about-me-text h2, .portfolio-title-container > h2 {
 	font-size: 3.5rem;
 	letter-spacing: 3px;
 	margin-bottom: 15px;
 }
 
-.about-me-text > p, .portfolio-title-container > h3{
+.about-me-text p, .portfolio-title-container > h3{
 	font-size: 2rem;
 	width: 100%;
 	letter-spacing: 2px;
@@ -141,15 +130,15 @@ nav > a {
 .full-stack-track-link {
 	font-size: 2rem;
 	text-decoration: none;
-	color: #C06C84;
+	color: #e49cb0;
 }
 
 .full-stack-track-link:visited {
-	color: #C06C84;
+	color: #e49cb0;
 }
 
-.about-me > img {
-	width:20%;
+.about-me img {
+	width:200px;
 	border-radius: 3px;
 }
 
@@ -158,56 +147,37 @@ nav > a {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
 	margin: 0 auto;
-	border-top: 50px solid  #355C7D ;
-	border-bottom: 50px solid  #355C7D ;
 	background-color: #a1596e;
 
 }
 
 .portfolio-title-container {
-	max-width: 1000px;
-	width: 100%;
 	padding: 15px;
 }
 
 .projects-container {
-	width: 100%;
-	max-width: 1000px;
-	display: flex;
-	flex-direction:column;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	gap: 40px;
 	padding: 15px;
 }
 
 .project {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column; 
-	gap: 10px;
 	border: 5px solid #C06C84;
 	border-radius: 2px;
 	background-color: #355C7D;;
 
 	
 }
-.project > h3 {
+.project h3 {
 	font-size: 2.5rem;
 	margin: 25px;
 	margin-bottom: 0;
 	letter-spacing: 2px;
 }
 
-.project-content{
+.project-content {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	max-width: 1000px;
 	justify-content: space-between;
-	flex-wrap: no-wrap;
 	
 }
 
@@ -215,23 +185,17 @@ nav > a {
 	width: 350px;
 	height: 200px;
 	padding: 10px;
+	object-fit: cover;
 
 }
 
-
-
-.project-words {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+.project-text p {
 	
-}
-
-.project-words > p {
 	font-size: 2rem;
 	padding: 10px;
 	letter-spacing: 3px;
 	line-spacing: 40px;
+	font-weight: 400;
 }
 
 .project-links-container {
@@ -242,31 +206,29 @@ nav > a {
 	margin-right: 30px;
 }
 
-.project-links-container > a {
+.project-links-container a {
 	font-size: 1.5rem;
+	font-weight: 400;
 }
 
 .contact {
 	background-color: #355C7D;
+	padding-top: 50px;
 }
 .contact-outer-container {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	flex-direction: column;
-	max-width: 1000px ;
+
 	margin: 0 auto;
 	background-color: #355C7D;
 	padding: 15px;
 }
 
-.contact-outer-container > h2 {
+.contact-outer-container h2 {
 	font-size: 3rem;
 	margin: 15px;
 	letter-spacing: 3px;
 }
 
-.contact-outer-container > p {
+.contact-outer-container p {
 	font-size: 2.5rem;
 	margin: 15px;
 	letter-spacing: 3px;
@@ -280,12 +242,12 @@ nav > a {
 	width: 100%;
 }
 
-.contact-container > a> img {
+.contact-container > a > img {
 	max-width: 100px;
-	margin:15px;
+	margin: 15px;
 }
 .contact-top {
-	display:none;
+	display: none;
 }
 
 footer a {
@@ -299,25 +261,22 @@ footer p {
 
 @media screen and (max-width:800px) {  
 
-	nav{
+	nav {
 		display: none;	
-	}
+	}	
 	
-	.intro-texts{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
 	.intro-texts > h1 {
 		font-size: 5rem;
 		line-height: 50px;
 	}
-	.intro-texts > h3 {
+	.intro-texts > p {
 		font-size: 2.4rem;
 		letter-spacing: 2px;
 		line-height: 35px;
+	}
+	
+	.intro-hi {
+		font-size: 4rem;
 	}
 	
 	br {
@@ -332,23 +291,23 @@ footer p {
 	}
 	.contact-top {
 		display: block;
-		max-height: 80px;
 		position: fixed;
 		width: 100%;
+		padding: 0;
 	}
 	.contact-bottom {
 		display: none;
 	}
 	
-	.about-me-text{
-		max-width:100%;
+	.about-me {
+		flex-wrap: wrap;
 	}
 	
-	.about-me > img {
+	.about-me img {
 		width:100%;
 	}
 	
-	.about-me-text > p, .portfolio-title-container > h3{
+	.about-me-text p, .portfolio-title-container > h3{
 		letter-spacing: 1.5px;
 		line-height: 22px;
 
@@ -358,21 +317,21 @@ footer p {
 		justify-content: center;
 		gap: 90px;
 	}
-	.contact-container > a> img {
+	.contact-icon {
 		height: 40px
 	}
 	
-	.contact-outer-container > h2 {
+	.contact-outer-container h2 {
 		display: none;
 	}
 
-	.contact-outer-container > p {
+	.contact-outer-container p {
 		display: none;
 	}
 	
 	.about-me-text {
 		width: 100%;
-		margin: 0 auto%;
+		margin: 0 auto;
 	}
 	
 	.project {
