@@ -320,6 +320,7 @@ footer p {
 		display: flex;
 		flex-flow: row wrap-reverse;
 		align-items: center;
+		margin-bottom: 30px;
 	}
 	
 	.contact-top {
@@ -338,6 +339,10 @@ footer p {
 	
 	.about-me img {
 		width:100%;
+	}
+	
+	.about-me h2 {
+		padding-top: 30px;
 	}
 	
 	.about-me-text p, .portfolio-title-container h3, .full-stack-track-link{
