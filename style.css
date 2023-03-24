@@ -1,83 +1,23 @@
 html {
 	font-size: 16px;
-}
-* {
 	box-sizing: border-box;
-	margin: 0;
 	font-family: Ubuntu, Sans-serif;
-	color: white;
-	font-weight: bold;
+	color: #ffffff;
+	background-color: #000000;
 }
-br {
-	display: none;
-}
-body {
-	background-color: #C06C84 ;
-}
+
 nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
-	padding: 30px;
-	background-color: #C06C84;
+	padding: 25px;
 }
 
 footer {
 	text-align: center;
-	background-color: #355C7D;
 	padding-bottom: 5px;
 }
-
-.about-me, .projects-container, .portfolio-title-container, .project-content, .contact-outer-container {
-	max-width: 1000px;
-	width: 100%;
-}
-
-a:visited {
-	color: inherit;
-}
-
-
-
-.nav-left-container {
-	display: flex;
-	justify-content: flex-start;
-	gap: 30px;
-	color: white;
-}
-
-.nav-left-container a {
-	text-decoration: none;
-	font-size: 1.5rem;
-	color: white;
-}
-.nav-left-container a:hover {
-	color: #355C7D;
-}
-
-.intro {
-	display: flex;
-	justify-content: center;
-	flex-wrap: nowrap;
-	padding: 15px;
-	align-items: center;
-	margin: 0 auto;
-	height: 100%;
-	max-width: 1100px;
-	gap: 30px;	
-}
-
-.intro img {
-	width: 300px;
-	object-fit: cover;
-	border-radius: 5px;
-}
-.intro-hi {
-	font-size: 3.5rem;
-	letter-spacing: 3px;
-	line-height: 80px;
-	}
 
 h1 {
 	font-size: 6rem;
@@ -87,64 +27,41 @@ h1 {
 	margin: 35px 0;
 }
 
-.intro-texts p {
-	font-size: 2rem;
-	letter-spacing: 1px;
-	line-height: 40px;
-}
-
-.intro-texts{
-	max-width: 65%
-}
-
-.about-me {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-	gap: 50px;
-	align-items: center;
-	width: 100%;
-	margin: 0 auto;
-	background-color: #355C7D;
-	padding: 15px;
-	
-}
-.about-background {
-	background-color:#355C7D;
-	border: 50px solid #355C7D ;
-	padding-bottom: 150px;
-}
-
-.about-me-text h2, .portfolio-title-container h2, .contact-outer-container h2 {
-	font-size: 3rem;
-	letter-spacing: 2.5px;
-	margin-bottom: 15px;
-}
-
-.about-me-text p, .portfolio-title-container p, .full-stack-track-link, .project-text p, .contact-outer-container p  {
-	font-size: 1.1rem;
-	letter-spacing: 1.5px;
-	line-height: 30px;
-	font-weight: 400;
-}
-
-.full-stack-track-link {
+a,
+a:visited {
 	text-decoration: none;
-	color: #e49cb0;
-	font-weight: 800;
+	color: inherit;
 }
 
-.full-stack-track-link:visited {
-	color: #e49cb0;
+.nav-left-container {
+	display: flex;
+	justify-content: flex-start;
+	gap: 30px;
 }
 
-.full-stack-track-link:hover {
-	color: white;
+.intro {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	align-items: center;
+	margin: 0 auto;
+	height: 100%;
+	max-width: 1000px;
+}
+
+.intro img {
+	width: 300px;
+	object-fit: cover;
+	border-radius: 140px;
+}
+
+.about {
+	padding: 0 auto;
+	width: 100%;
 }
 
 .about-me img {
-	width:200px;
+	width: 200px;
 	border-radius: 3px;
 }
 
@@ -154,267 +71,39 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	background-color: #a1596e;
 	padding-top: 80px;
-
-}
-
-.portfolio-title-container {
-	padding: 0 15px;
-}
-
-.project {
-	border: 10px solid #C06C84;
-	border-radius: 3px;
-	background-color: #355C7D;
-	margin: 60px 0;
-}
-
-.project-one {
-	margin: 30px 0;
-}
-.project h3 {
-	font-size: 2rem;
-	padding: 30px;
-	margin-bottom: 0;
-	letter-spacing: 2px;
-}
-
-.fa-github:hover, .fa-eye:hover, .fa-brands:hover, .fa-solid:hover {
-	color: #C06C84;;
 }
 
 .project-content {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	
+
 }
 
 .project-content img {
 	width: 350px;
 	height: 200px;
-	padding-left: 30px;
-	padding-bottom: 30px;
 	object-fit: cover;
-
-}
-
-.project-text p {
-	font-size: 1rem;
-	padding-left: 15px;
-	padding-right: 30px;
-	letter-spacing: 1px;
 }
 
 .project-links-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	gap: 20px;
-	padding: 45px 30px 15px;
-}
-
-.project-links-container a {
-	font-size: 1.5rem;
-	font-weight: 400;
-	text-decoration: none;
-}
-
-.contact {
-	background-color: #355C7D;
-	padding-top: 30px;
-}
-.contact-outer-container {
-
-	margin: 0 auto;
-	background-color: #355C7D;
-}
-
-.contact-outer-container h2 {
-	margin-bottom: 0;
-	padding: 20px 20px 20px 30px;
-
-}
-
-.contact-outer-container p {
-	padding-left: 30px;
-	padding-bottom: 30px;
-
 }
 
 .contact-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	gap: 50px;
-	width: 100%;
-	padding-left: 30px;
-}
-
-.contact-top {
-	display: none;
+	gap: 20px;
 }
 
 .contact i {
-	font-size: 50px;
+	font-size: 30px;
 }
 
-footer a {
-	font-size: 1rem;
-	text-decoration: none;
-	padding-top: 15px;
-}
+@media screen and (max-width:800px) {}
 
-footer a:hover {
-	color: #C06C84;
-}
-
-footer p {
-	margin-top: 15px;
-}
-
-
-@media screen and (max-width:800px) {  
-
-	nav {
-		display: none;	
-	}	
-	
-	h1 {
-		font-size: 3rem;
-		line-height: 55px;
-		margin: 15px 0;
-
-	}
-	.intro-texts {
-		max-width: 800%;
-		margin: 0 30px;
-	}
-	
-	.intro-texts > * {
-		text-align: center;
-	}
-	.intro-texts p {
-		font-size: 1.5rem;
-		letter-spacing: 1.2px;
-		line-height: 25px;
-	}
-	
-	.intro-hi {
-		font-size: 4rem;
-		margin-top: 10px;
-	}
-	
-	br {
-		display: inline;
-	}
-	
-	.about-me-text h2, .portfolio-title-container h2, .contact-outer-container h2 {
-		margin-bottom: 0;
-	}
-	
-	.intro {
-		gap: 0px;
-		padding: 80px 50px 50px 50px;
-		display: flex;
-		flex-flow: row wrap-reverse;
-		align-items: center;
-		margin-bottom: 30px;
-	}
-	
-	.contact-top {
-		display: block;
-		position: fixed;
-		width: 100%;
-		padding: 0;
-	}
-	.contact-bottom {
-		display: none;
-	}
-	
-	.about-me {
-		flex-wrap: wrap;
-	}
-	
-	.about-me img {
-		width:100%;
-	}
-	
-	.about-me h2 {
-		padding-top: 30px;
-	}
-	
-	.about-me-text p, .portfolio-title-container h3, .full-stack-track-link{
-		letter-spacing: 1.5px;
-		line-height: 22px;
-
-	}
-	
-	.contact-container {
-		justify-content: center;
-		align-items: center;
-		gap: 80px;
-		height: 60px;
-	}
-	
-	.contact-outer-container h2 {
-		display: none;
-	}
-
-	.contact-outer-container p {
-		display: none;
-	}
-	
-	.about-me-text {
-		width: 100%;
-		margin: 0 auto;
-	}
-	
-	.portfolio {
-		padding: 20px 0;
-	}
-	
-	.project {
-		align-items: center;
-		margin: 30px 10px;
-		
-	}
-	
-	.project h3 {
-		padding: 15px;
-		text-align: center;
-	}
-	
-	.project-content {
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-	
-	.project-content img {
-		padding: 0;
-		width: 90%;
-	}
-	
-	.project-text p {
-		padding: 25px 15px;
-	}
-
-	.portfolio p {
-		padding: 30px;
-	}
-	
-	.portfolio-title-container p {
-		padding: 0;
-		font-size: 1rem;
-		line-height: 22px;
-	}
-	
-	.portfolio-title-container {
-		padding: 0 50px;
-	}
-	
-	.project-one {
-		margin-top: 20px;
-	}
-}
+;
