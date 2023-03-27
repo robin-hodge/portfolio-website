@@ -135,6 +135,15 @@ li {
 	margin: 0 auto;
 }
 
+.full-stack-track-link, .full-stack-track-link:visited {
+	font-weight: bold;
+	color: #f8785b;
+}
+
+.full-stack-track-link:hover {
+	color:#eae4df;
+}
+
 .about-text-container-1 {
 	max-width: 600px;
 	padding: 20px;
@@ -196,6 +205,7 @@ li {
 	border-radius: 30px;
 	padding: 20px;
 	gap: 40px 20px;
+	max-width: 1500px;
 }
 
 .project {
@@ -210,7 +220,7 @@ li {
 }
 
 .project-text {
-	max-width: 300px;
+	max-width: 250px;
 	display: inline-block
 }
 
@@ -225,8 +235,8 @@ li {
 }
 
 .project img {
-	width: 160px;
-	height: 160px;
+	width: 220px;
+	height: 220px;
 	object-fit:cover;
 	border-radius: 25px;
 	padding: 15px;

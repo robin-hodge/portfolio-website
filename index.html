@@ -26,7 +26,6 @@
 		<div class="navigation-container">
 			<a href="#about">About</a>
 			<a href="#portfolio-container">Portfolio</a>
-			<a href="#contact">Contact</a>
 			<a href="src/RHCV23.pdf" target="_blank">My CV</a>
 		</div>
 	</nav>
@@ -45,9 +44,9 @@
 		<div>
 			<div class="intro">
 				<h1>Hello!</h1>
-				<p class="intro-secondary-text">I'm Robin and I like building things with code.</p>
+				<p class="intro-secondary-text">I'm Robin, and I like building things with code.</p>
 			</div>
-			<div class="about">
+			<div class="about" id="about">
 				<img src="src/images/me-one.png" alt="a picture of me">
 				<div class="about-text-container-1">
 					<h2>So, who is Robin?</h2>
@@ -57,8 +56,7 @@
 						<a href="https://io-academy.uk/courses/full-stack-track/" target="_blank"
 							class="full-stack-track-link">iO Academy Full Stack Track</a>
 						bootcamp which I absolutely loved.
-					<p>My maths background lends itself to backend engineering or full
-						stack projects, but I am also interested in visual design, and I want to try all aspects of development.
+					<p>My maths background lends itself to backend engineering, but but I am also interested in visual design and accessibility, and I want to try all aspects of development.
 					</p>
 					<p>Here are
 						a few technologies, methodologies and frameworks I have been working with recently:
@@ -76,7 +74,7 @@
 				</div>
 			</div>
 			<p class="explore-text">Explore what I've done so far....</p>
-			<div class="portfolio-container">
+			<div class="portfolio-container" id="portfolio-container"> 
 				<div class="project">
 					<div class="project-top-row">
 						<img src="src/images/collector-app-image.png"
@@ -88,9 +86,7 @@
 										class="fa-brands fa-github"></i></a>
 								<a href="#"><i class="fa-sharp fa-solid fa-eye"></i></a>
 							</div>
-							<p>A web app for storing dreams. Can view their collection, add new dreams and remove
-								ones
-								they don't want any more.</p>
+							<p>A web app for storing dreams - I set up a form that made POST requests, and handled them on the backend with MySQL queries to update rows on the database. I tested it with PHPUnit, and ensured it was not vulnerable to SQL injection, in addition to validating and sanitizing the data going in to the database.</p>
 							<ul class="language-list">
 								<li>PHP</li>
 								<li>MySQL</li>
@@ -109,8 +105,7 @@
 								<a href="#"><i class="fa-brands fa-github"></i></a>
 								<a href="#"><i class="fa-sharp fa-solid fa-eye"></i></a>
 							</div>
-							<p>A game that tests how quickly you can type, showing accuracy and words per minute.
-								Good name pun, right?
+							<p>This javascript typing speed game made use of settimeout and setinterval for the timer, and event listeners with DOM manipulation to change the letters to the right colour. I was responsible for the auto scrolling logic, and the code which changed the colour of each letter based on accuracy. I also came up with the name. Good name pun, right?
 							</p>
 							<ul class="language-list">
 								<li>Javascript</li>
@@ -129,8 +124,11 @@
 								<a href="#"><i class="fa-brands fa-github"></i></a>
 								<a href="#"><i class="fa-sharp fa-solid fa-eye"></i></a>
 							</div>
-							<p>This react applicaiton allowed users to browse menus,
-								create and place an order.
+							<p>This deliveroo-like React app used a pre-made RESTful API. We accessed different
+								endpoints using .fetch, and then updated the DOM accordingly by using state
+								and effect hooks. I worked handling the initial fetch for all restaurants,
+								and the order component, which had to be passed the different items values
+								through props.
 							</p>
 							<ul class="language-list">
 								<li>React.js</li>
@@ -144,13 +142,15 @@
 					<div class="project-top-row">
 						<img src="src/images/project-management-api.png">
 						<div class="project-text">
-							<h3>Project API</h3>
+							<h3>My RESTful API</h3>
 							<div class="project-links-container">
-								<a href="#"><i class="fa-brands fa-github"></i></a>
+								<a href="https://github.com/iO-Academy/23-jan-chickens-project-management-api"><i class="fa-brands fa-github"></i></a>
 								<a href="#"><i class="fa-sharp fa-solid fa-eye"></i></a>
 							</div>
-							<p>This RESTful API was built using OOP, following SOLID principles, and provides
-								multiple endpoints.
+							<p>Built using OOP we followed SOLID principles. We used  the entity-hydrator design
+								pattern to deal with the database, and the project had 100% test
+								coverage. I worked on two endpoints, and the 'User' entity-
+								hydrator pair, calling various methods and instantiating classes and static methods to format andsend the HTTP response andgracefuly handle errors and exceptions.
 							</p>
 							<ul class="language-list">
 								<li>OOP</li>
