@@ -89,6 +89,7 @@ li {
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 30px;
+	height: 100%;
 }
 
 .left-nav a {
