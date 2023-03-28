@@ -83,8 +83,7 @@ li {
 
 .left-nav {
 	position: fixed;
-	top: 500px;
-	top: 5px;
+	bottom: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
