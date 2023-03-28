@@ -157,6 +157,11 @@ li {
 
 }
 
+.language-list {
+	text-align: end;
+	font-size: 1.2rem;
+}
+
 .skills-list li, .language-list li {
 	font-family: 'Roboto Mono', monospace;
 	padding: 2px;
@@ -172,7 +177,7 @@ li {
 .about h2 {
 	font-size: 2.5rem;
 	font-weight: 400;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Playfair Display', serif;
 }
 
 .about p {
@@ -193,24 +198,17 @@ li {
 .explore-text {
 	text-align: start;
 	font-size: 3rem;
-	padding: 200px 50px 50px 50px;
+	padding: 200px 0 50px 0;
 	margin: 0;
 	font-family: 'Playfair Display', serif;
 }
 
 .portfolio-container {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-direction: column;
 	border-radius: 30px;
 	padding: 20px;
 	gap: 40px 20px;
-	max-width: 1500px;
-}
-
-.project {
-	max-width: 500px;
 }
 
 .project-top-row {
@@ -220,27 +218,31 @@ li {
 	justify-content: space-between;
 }
 
+.project-top-row h3, .project-top-row a {
+	font-size: 2.1rem;
+	font-family: 'Playfair Display', serif;
+	font-weight:900;
+}
 .project-middle-row {
-	max-width: 250px;
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.project-middle-row h3 {
-	margin: 0;
-	display: inline-block;
-}
 
 .project-middle-row p {
 	word-spacing: 2px;
-	line-height: 25px;
-	text-align: justify;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	padding: 30px 50px;
+	margin: 0;
 }
 
 .project img {
-	width: 220px;
-	height: 220px;
+	width: 250px;
+	height: 250px;
 	object-fit:cover;
-	border-radius: 25px;
+	border-radius: 125px;
 }
 
 .project-links-container {
@@ -308,11 +310,15 @@ li {
 	.project {
 		padding-bottom: 20px;
 	}
-	.project img {
-		width: 250px;
-		height: 250px;
+
+	.project-middle-row {
+		flex-wrap: wrap;
 	}
 
+	.project-middle-row p {
+		padding: 30px 0;
+	}
+	
 	.portfolio-container {
 		gap: 0;
 	}
@@ -322,7 +328,7 @@ li {
 	}
 
 	.explore-text {
-		padding: 50px 20px 20px 20px;
+		padding: 200px 20px 20px 20px;
 		font-size: 2.5rem;
 	} 
 
