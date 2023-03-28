@@ -5,8 +5,8 @@ html {
 	color: #eae4df;
 	background-color: #392c3b;
 	overflow-x: hidden;
-
 }
+
 
 html::-webkit-scrollbar {
 	display: none;
@@ -149,10 +149,11 @@ li {
 	padding: 20px;
 }
 
+
 .skills-list {
 	display: grid;
 	gap: 3px;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto;
 
 }
 
@@ -214,24 +215,25 @@ li {
 
 .project-top-row {
 	display: flex;
-	flex-wrap: wrap-reverse;
+	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
-.project-text {
+.project-middle-row {
 	max-width: 250px;
-	display: inline-block
+	display: inline-block;
 }
 
-.project-text h3 {
+.project-middle-row h3 {
 	margin: 0;
 	display: inline-block;
 }
 
-.project-text p {
+.project-middle-row p {
 	word-spacing: 2px;
 	line-height: 25px;
+	text-align: justify;
 }
 
 .project img {
@@ -239,14 +241,12 @@ li {
 	height: 220px;
 	object-fit:cover;
 	border-radius: 25px;
-	padding: 15px;
 }
 
 .project-links-container {
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	padding: 10px;
 }
 
 .project-links-container a {
@@ -281,26 +281,54 @@ li {
 		padding-bottom: 30px;
 	}
 
+	.about h2 {
+		padding: 50px 0;
+		text-align: center;
+		font-size: 1.8rem;
+	}
+
+	.about p{
+		text-align: justify;
+		margin: 0;
+		padding-bottom: 20px;
+	}
+
+	.intro {
+		padding: 100px 30px 30px 30px;
+	}
+
+	.about {
+		padding: 150px 20px 20px 20px;
+
+	}
+	.about img {
+		margin: 0;
+	}
+
+	.project {
+		padding-bottom: 20px;
+	}
 	.project img {
 		width: 250px;
 		height: 250px;
-		padding: 30px;
 	}
 
 	.portfolio-container {
 		gap: 0;
 	}
 
-	.about {
-		padding-top: 150px;
+	.about-text-container-1 {
+		padding: 0;
 	}
 
 	.explore-text {
-		padding-top: 0;
-	}
+		padding: 50px 20px 20px 20px;
+		font-size: 2.5rem;
+	} 
 
 	.skills-list {
-		display: flex;
-		flex-wrap: wrap;
+		grid-template-columns: auto auto;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
