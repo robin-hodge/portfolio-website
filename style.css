@@ -53,6 +53,10 @@ a,
 a:visited {
 	text-decoration: none;
 	color: inherit;
+	transition-property: color;
+	transition-duration: 0.25s;
+	transition-timing-function: linear;
+
 }
 
 a:hover {
@@ -270,8 +274,43 @@ li {
 }
 
 @media screen and (max-width: 768px) {	
-	.decorative-line, nav, .left-nav {
+	.decorative-line, nav {
 		display: none;
+	}
+
+	.nav {
+		display: none;
+		padding: 0;
+	}
+	.left-nav {
+		position: static;
+		flex-direction: row;
+		justify-content: flex-start;
+		height: 30px;
+		padding: 0;
+	}
+
+	.left-nav a {
+		display: inline;
+		padding: 0;
+		font-size: 2.5rem;
+	}
+
+	.left-nav img {
+		display: none;
+	}
+
+	.contacts-container {
+		padding: 40px 0 0 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		position: fixed;
+		background-color: #392c3b;
+	}
+
+	.contacts-container a {
+		padding: 20px
 	}
 	
 	main {
